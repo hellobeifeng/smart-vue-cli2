@@ -7,16 +7,21 @@
   "scripts": {
     "dev": "cd client && webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "lint": "cd client && seslint --ext .js,.vue src",
+    "lint": "cd client && eslint --ext .js,.vue src",
+    "lint-fix": "cd client && eslint --fix --ext .js,.vue src",
     "build": "cd client && node build/build.js",
     "dev-s": "cross-env NODE_BK_ENV=dev node-dev server/index.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
     "element-ui": "^2.13.0",
     "express": "^4.17.1",
     "moment": "^2.24.0",
+    "mongoose": "^5.8.11",
     "nodemon": "^2.0.2",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
