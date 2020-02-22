@@ -1,4 +1,5 @@
 module.exports = {
   port: 3000,
-  basePath: '/smart'
+  basePath: '/smart',
+  mongooseConnectUrl: 'mongodb://localhost:27017/smart-vue-cli-release'
 }
